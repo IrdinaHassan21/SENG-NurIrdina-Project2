@@ -23,15 +23,16 @@ This project demonstrates:
 ---
 
 ## Project Structure
-CatCollectorDataManager/
-│
-├── Models/ # Classes representing game entities (Player.cs)
-├── Data/ # Data repository and interfaces (GameRepository.cs, IGameRepository.cs)
-├── Services/ # Helper services (RandomDataGenerator.cs)
-├── Reports/ # Analytics and summary reports (Analytics.cs)
-├── Program.cs # Main console application entry point
-└── CatCollectorDataManager.csproj
 
+CatCollectorDataManager/  
+│  
+├── Models/ # Classes representing game entities (Player.cs)  
+├── Data/ # Data repository and interfaces (GameRepository.cs, IGameRepository.cs)  
+├── Services/ # Helper services (RandomDataGenerator.cs)  
+├── Reports/ # Analytics and summary reports (Analytics.cs)  
+├── Program.cs # Main console application entry point  
+└── CatCollectorDataManager.sln  
+  
 ---
 
 ## Features
@@ -58,10 +59,35 @@ CatCollectorDataManager/
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/IrdinaHassan21/SENG-NurIrdina-Project2.git
+git clone https://github.com/IrdinaHassan21/SENG-NurIrdinaProject2.git  
 cd SENG-NurIrdinaProject2/CatCollectorDataManager
 
-2. **Restr=ore Dependencies**
+2. Restore dependencies
+   
+dotnet restore
 
+3. Build the project
+   
+dotnet build
 
+4. Run the console application
+   
+dotnet run
+
+5. Follow the on-screen menu
+   
+- Select options by typing the corresponding number
+- Add players, view analytics, or generate random data
+
+---
+
+Notes
+- Data is stored in local JSON files (or in-memory for testing)
+- Random data generation helps demonstrate analytics features without manual input
+- Best score is automatically updated if a player beats their previous score
+
+Future Integration
+- This backend is designed to be connected to a game frontend in the future:
+- Game can send player stats directly to the backend
+- Backend will automatically update Good/Bad/Chonky Cats and Best Score
+- No manual input required from the player
