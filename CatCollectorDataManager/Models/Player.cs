@@ -15,6 +15,7 @@ namespace CatCollectorDataManager.Models
         [JsonIgnore]
         public int TotalCats => GoodCatsCollected + BadCatsCollected + ChonkyCatsCollected;
 
+
         public override string ToString()
         {
             return $"{Name} (ID: {Id}) — BestScore: {BestScore}, Good: {GoodCatsCollected}, Bad: {BadCatsCollected}, Chonky: {ChonkyCatsCollected}, Total: {TotalCats}";
